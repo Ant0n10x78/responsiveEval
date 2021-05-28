@@ -1,5 +1,10 @@
-
-
+p{
+    font-family: HKGrotesk;
+}
+.logo_type{
+    font-family: HKGrotesk-Light;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 .header_top{
     display: flex;
     justify-content: space-around;
@@ -24,3 +29,7 @@
     font-size: 14px;
 }
 
+//FOOTER
+#footer{
+    background-color: #E74832;
+}
