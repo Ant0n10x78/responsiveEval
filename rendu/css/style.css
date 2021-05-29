@@ -1,0 +1,123 @@
+p{
+    font-family: HKGrotesk;
+}
+.logo_type{
+    font-family: HKGrotesk-Light;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+body{
+    display:grid;
+    justify-content: center;
+}
+/*HEADER*/
+header{
+    width: 1368px;
+    height: 162px;
+    border: 1px solid #000000;
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.header_top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_bar{
+    border :1px black solid;
+}
+
+.header_menu{
+    display:grid;
+    justify-content: center;
+}
+.header_list{
+    width:401px;
+    height:15px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.header_link{
+
+height: 15px;
+left: 80.04%;
+right: 14.47%;
+top: calc(50% - 15px/2 - 26.5px);
+
+font-family: HK Grotesk;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.342857px;
+
+color: #003B5C;
+}
+
+/*///////////////////////////////////////////////////*/
+/*MAIN*/
+.article{
+    width: 1276px;
+    height: 697px;
+    display:flex;
+    justify-content: space-between;
+}
+.article_left_list{
+    justify-content: center;
+    display:grid;
+    
+}
+.article_left_img{
+    width: 736px;
+    height: 475px;
+}
+.article_left_content{
+    position: absolute;
+    width: 520px;
+    left: 14.67%;
+    right: 14.67%;
+    top: 62.41%;
+    bottom: 26.11%;
+
+    background: #FFFFFF;
+}
+.article_right_img{
+    width:519px;
+    height:335px;
+}
+/******************************************************/
+.item{
+    justify-content: center;
+    display:grid;
+    width: 1283px;
+    height: 491px;
+}
+.item_header{
+    display:flex;
+}
+.item_title{
+ 
+}
+.item_bar_left{
+    
+}
+.item_bar_right{
+    
+}
+.item_list_img{
+    display: flex;
+    width: 1283px;
+    justify-content: space-between;
+}
+.item_img{
+    width:411px;
+    height:265px;
+}
+/*////////////////////////////////////////////*/
+/*FOOTER*/
+footer{
+    background-color: #E74832;
+}
