@@ -11,6 +11,7 @@ ul{
 body{
     display:grid;
     justify-content: center;
+    margin:0;
 }
 /*HEADER*/
 header{
@@ -151,6 +152,7 @@ color: #003B5C;
     height: 15px;
     width: 224px;
     padding-top:20px;
+    margin:auto;
 }
 .article_left_title{
     margin:0px;
@@ -515,4 +517,91 @@ color: #FFFFFF;
         
         /*display:unset;*/
     }
+}
+
+@media(max-width:375px) {
+        header{
+            height: 110px;
+            width:375px;
+        }
+        body{
+            display: unset;
+            justify-content: unset;
+        }
+        .header_bar,.header_menu,.header_left,.header_right,.item_bar_left,.item_bar_right{
+            display:none;
+        }
+        .header_middle{
+            position: relative;
+        }
+
+        .article_left_img {
+            width: 375px;
+            height: 346px;
+            margin: auto;
+        }
+        .article_left_content{
+            width:375px;
+            left:unset;
+            right:unset;
+        }
+        .article_left_content_p {
+        width:unset;
+        }
+
+        .article_right_img {
+            width: 375px;
+            height: 272px;
+        }
+        .article_right_content{
+            width: 375px;
+        }
+        .article_right_content_p{
+            width: 375px;
+        }
+        .item{
+            width:375px;
+            height: 1360px;
+            margin-top: 30px;
+        }
+        .item_header{
+            height: 34px;
+        }
+        .item_list_img {
+            display: unset;
+            width: 375px;
+            
+        }
+        .item_block{
+            margin-top: 15px;
+            margin-bottom:35px;
+        }
+        .item_title{
+            margin:auto;
+        }
+
+
+        .newsletter{
+            width: 375px;
+        }
+        .newsletter_title {
+            width: 375px;
+            margin-top: 50px;
+        }
+        .newsletter_content {
+            width: 375px;
+        }
+        .footer{
+            width:375px;
+            height: 600px;
+        }
+        .footer_bar {
+            width: 375px;
+        }
+        .footer_logo {
+        margin:auto;
+        }
+        .footer_header{
+            display:unset;
+        }
 }
