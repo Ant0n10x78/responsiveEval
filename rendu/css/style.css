@@ -1,9 +1,8 @@
 p{
     font-family: HKGrotesk;
 }
-.logo_type{
-    font-family: HKGrotesk-Light;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+a{
+    text-decoration: none;
 }
 body{
     display:grid;
@@ -20,21 +19,85 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 .header_top{
     display: flex;
     justify-content: space-around;
+    height:110px;
 }
-
+.header_left{
+    display: flex;
+    height: 30px;
+    transform: translateY(150%);
+}
+.img_cloud{
+    width:24px;
+    height:24px;
+}
+.header_day{
+    margin: 0px;
+    text-transform: uppercase;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.342857px;
+    color: #003B5C;
+}
+.header_degre{
+    margin: 0px;
+    text-transform: uppercase;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.342857px;
+    color: rgba(93, 83, 79, 0.6);
+}
+.header_middle{
+    height: 64px;
+    margin-top: 24px;
+}
+.header_img{
+    width:221px;
+    height: 64px;
+}
 .header_bar{
     border :1px black solid;
 }
+.header_right{
+    display: flex;
+    width: 210px;
+    height: 17px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
 
+/* identical to box height */
+    text-align: center;
+    letter-spacing: 0.342857px;
+
+    color: #003B5C;
+    transform: translateY(250%);
+}
+.img_insta{
+    width:17px;
+    height:17px;
+}
 .header_menu{
     display:grid;
     justify-content: center;
+    height: 50px;
 }
 .header_list{
     width:401px;
     height:15px;
     display: flex;
     justify-content:space-between;
+    text-transform: uppercase;
+    transform: translateY(100%);
 }
 
 .header_link{
@@ -181,6 +244,59 @@ color: #003B5C;
     display:flex;
     justify-content: space-between;
 }
+.article_left_block_title{
+    height: 15px;
+    width: 224px;
+    padding-top:20px;
+}
+.article_left_title{
+    margin:0px;
+    text-transform: uppercase;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12.031px;
+    line-height: 15px;
+
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    color: #003B5C;
+}
+.article_left_bar{
+    margin: 0px;
+}
+.article_left_title_content{
+    margin:0px;
+    text-transform: none;
+    font-family: HK Grotesk;
+font-style: normal;
+font-weight: 600;
+font-size: 12.031px;
+line-height: 15px;
+
+/* identical to box height */
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    color: rgba(93, 83, 79, 0.6);
+}
+.article_left_content_p{
+    width:520px;
+    margin-top:11px;
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+
+    /* or 175% */
+    text-align: center;
+letter-spacing: -0.4px;
+
+color: #5D534F;
+}
 .article_left_list{
     justify-content: center;
     display:grid;
@@ -191,18 +307,63 @@ color: #003B5C;
     height: 475px;
 }
 .article_left_content{
-    position: absolute;
+    position: relative;
     width: 520px;
     left: 14.67%;
     right: 14.67%;
-    top: 62.41%;
-    bottom: 26.11%;
+    bottom: 69%;
 
     background: #FFFFFF;
+}
+.article_left_content_main{
+    margin-top:20px;
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 39px;
+
+/* or 108% */
+    text-align: center;
+    letter-spacing: -0.4px;
+
+    color: #003B5C;
+}
+.article_left_content_p{
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+
+/* or 175% */
+    text-align: center;
+    letter-spacing: -0.4px;
+}
+.article_content_link{
+    width: 113px;
+    display: flex;
+    margin:auto;
 }
 .article_right_img{
     width:519px;
     height:335px;
+}
+.article_right_content{
+    position: relative;
+    width: 440px;
+    height: 147px;
+    bottom: 9%;
+    margin:auto;
+
+    background: #FFFFFF;
+}
+.arrow_red{
+    height: 5px;
+    width: 23px; /*Normalement 18,72 */
+    background-image: url(../img/ARROW.png);
+    background-repeat: no-repeat;
+    transform: translateY(150%);
 }
 /******************************************************/
 .item{
@@ -254,6 +415,10 @@ color: #003B5C;
 .item_img{
     width:411px;
     height:265px;
+}
+.item_content_link{
+    width: 113px;
+    display: flex;
 }
 /*********************************************/
 .newsletter{
@@ -309,11 +474,16 @@ footer{
 }
 .footer{
     width: 1276px;
+    margin:auto;
 }
 .footer_bar{
     width:1276px;
     border-top: thick double #E5DBD1;
     transform: translateY(50%);
+}
+.footer_mention{
+    display: flex;
+    justify-content: space-between;
 }
 /*////////////////////////////////////////////*/
 /*MEDIA QUERIES*/
