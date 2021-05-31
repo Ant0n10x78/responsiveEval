@@ -366,10 +366,17 @@ color: rgba(93, 83, 79, 0.6);
     border: rgba(93, 83, 79, 0.6) 1px solid;
 }
 .item_menu_arrow{
+    margin: 0px;
+    font-size: 12px;
     position: absolute;
     width:113px;
     display: flex;
     right:7%;
+    text-transform: uppercase;
+    color: #E74832;
+}
+.item_menu_arrow_T{
+    transform: translateY(50%);
 }
 .item_block{
     width:411px;
@@ -386,7 +393,6 @@ color: rgba(93, 83, 79, 0.6);
     width: 113px;
     display: flex;
     margin-bottom: 0px;
-    
 }
 .item_content_title{
     font-family: HK Grotesk;
@@ -581,6 +587,9 @@ color: #FFFFFF;
     footer{
         margin:auto;
     }
+    .footer_mention{
+        justify-content: space-around;
+    }
     .footer_list{
         width:739px;
         justify-content: space-around;
@@ -602,7 +611,7 @@ color: #FFFFFF;
             display: unset;
             justify-content: unset;
         }
-        .header_bar,.header_menu,.header_left,.header_right,.item_bar_left,.item_bar_right{ 
+        .header_bar,.header_menu,.header_left,.header_right,.item_bar_left,.item_bar_right,.item_menu{ 
             display:none;
         }
         .header_middle{
@@ -681,7 +690,15 @@ color: #FFFFFF;
             height: 600px;
         }
         .footer_list{
+            margin-top:55px;
             padding:5%;
+            display:unset;
+        }
+        .footer_list1{
+            width:300px;
+        }
+        .footer_list2{
+            width:300px;
         }
         .footer_img{
             width: 115px;
