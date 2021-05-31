@@ -772,3 +772,15 @@ box-shadow: 2px 2px 2px 1px white;
             
         }
 }
+
+
+.burger_menu_on{
+    display:none;
+    width: 75%;
+    position:fixed;
+    height: 100%;
+    top:0%;
+    right: 0%;
+    background-color: white;
+    z-index:1000000;
+}
