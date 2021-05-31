@@ -9,6 +9,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--PERSONNAL JS-->
+    <script src="js/main.js"></script>
     <title>Silver Bird</title>
 </head>
 <body>
@@ -30,18 +32,18 @@
                 <img class="header_img" src="img/LOGOTYPE.png" alt="">
             </div>
             <div class="header_right">
-                <div><a href="">À propos</a></div>
+                <div><a href="#apropos">À propos</a></div>
                 <div><a href="">Recherche</a></div>
-                <img class="img_insta" src="img/INSTAGRAM.png" alt="">
+                <a href="https://www.instagram.com"><img class="img_insta" src="img/INSTAGRAM.png" alt=""></a>
             </div>
         </section>
         <div class="header_bar"></div>
         <section class="header_menu">
             <div class="header_list">
-                <div class="header_link"><a href="">Montres</a></div>
-                <div class="header_link"><a href="">Automobiles</a></div>
-                <div class="header_link"><a href="">Lifestyle</a></div>
-                <div class="header_link"><a href="">Sports</a></div>
+                <div class="header_link"><a href="#watches">Montres</a></div>
+                <div class="header_link"><a href="#cars">Automobiles</a></div>
+                <div class="header_link"><a href="#lifestyle">Lifestyle</a></div>
+                <div class="header_link"><a href="#sports">Sports</a></div>
             </div>
         </section>
     
@@ -81,7 +83,7 @@
                     </div>
                 </div>
             </section>
-            <section class="item">
+            <section class="item" id="watches">
                 <div class="item_header">
                     <div class="item_bar_left"></div>
                     <h2 class="item_title">Montres</h2>
@@ -137,7 +139,7 @@
                     </div>
                 </section>
             </section>
-            <section class="item">
+            <section class="item" id="cars">
                 <div class="item_header">
                     <div class="item_bar_left"></div>
                     <h2 class="item_title">Automobiles</h2>
@@ -198,10 +200,10 @@
                 <div class="newsletter_block">
                     <h2 class="newsletter_title">La newsletter Silver Bird</h2>
                     <p class="newsletter_content">Retrouvez l’actualité qui compte pour vous toutes les semaines dans votre boîte mail. Sans spam, sauf pour nos ventes privées !</p>
-                    <button class="newsletter_button">Inscrivez-vous!</button>
+                    <a href="" style="width: 255px;height: 55px;margin:auto;"><button class="newsletter_button">Inscrivez-vous!</button></a>
                 </div>
             </section>
-            <section class="item">
+            <section class="item" id="lifestyle">
                 <div class="item_header">
                     <div class="item_bar_left"></div>
                     <h2 class="item_title">Lifestyle</h2>
@@ -259,7 +261,7 @@
                     </div>
                 </section>
             </section>
-            <section class="item">
+            <section class="item" id="sports">
                 <div class="item_header">
                     <div class="item_bar_left"></div>
                     <h2 class="item_title">Sports</h2>
@@ -341,7 +343,7 @@
                                 </ul>
                             </div>
                             <div>
-                                <h3 class="footer_font_title">À propos</h3>
+                                <h3 class="footer_font_title" id="apropos">À propos</h3>
                                 <ul>
                                     <li class="footer_font_content">Nos plumes</li>
                                     <li class="footer_font_content">Contact</li>
@@ -352,7 +354,7 @@
                         <div class="footer_list2">
                             <div>
                             <h3 class="footer_font_title">Rejoignez la newsletter</h3>
-                            <button href="" class="footer_font_content">Rester au courant</button>
+                            <button href="" class="footer_font_content footer_button">Rester au courant</button>
                         </div>
                         <div>
                             <h3 class="footer_font_title">Suivez-nous</h3>

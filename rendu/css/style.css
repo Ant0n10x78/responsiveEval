@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 p{
     font-family: HKGrotesk;
 }
@@ -66,7 +69,7 @@ header{
     height: 64px;
 }
 .header_bar{
-    border :1px black solid;
+    border :1px rgba(227, 218, 204, 0.5) solid;
 }
 .header_right{
     display: flex;
@@ -296,7 +299,7 @@ color: #5D534F;
     width: 1283px;
     height: 500px;
     margin:auto;
-    margin-bottom:30px;
+    margin-bottom: 55px;
 }
 .item_header{
     display:flex;
@@ -340,13 +343,16 @@ color: #5D534F;
     height: 15px;
     display: flex;
     margin-bottom: 20px;
+    justify-content: flex-end;
 }
 .item_menu_link{
-    position:relative;
+    position:absolute;
     margin:auto;
     display:flex;
     width: 375px;
     justify-content: space-around;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .item_menu_link_content{
     margin:0px;
@@ -371,7 +377,6 @@ color: rgba(93, 83, 79, 0.6);
     position: absolute;
     width:113px;
     display: flex;
-    right:7%;
     text-transform: uppercase;
     color: #E74832;
 }
@@ -461,10 +466,31 @@ color: #003B5C;
     letter-spacing: -0.4px;
 }
 .newsletter_button{
+    font-family: HK Grotesk;
+font-style: normal;
+font-weight: 600;
+font-size: 15.031px;
+line-height: 19px;
+
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.499742px;
+
+color: #003B5C;
     width:255px;
     height: 55px;
     margin:auto;
     margin-top:50px;
+    border: 1px #003B5C solid;
+    color: #003B5C;
+    background-color: white;
+    text-transform: uppercase;
+    box-shadow: 8px 8px 2px 1px #E74832;
+    transition:0.5s;      
+}
+.newsletter_button:hover{
+    transition: 0.5s;
+    box-shadow: 12px 12px 2px 1px white;
 }
 /*////////////////////////////////////////////*/
 /*FOOTER*/
@@ -550,6 +576,9 @@ line-height: 15px;
 letter-spacing: 0.4px;
 
 color: #FFFFFF;
+}
+.footer_button{
+
 }
 /*////////////////////////////////////////////*/
 /*MEDIA QUERIES*/
@@ -685,6 +714,7 @@ color: #FFFFFF;
         .newsletter_content {
             width: 375px;
         }
+        
         .footer,footer{
             width:375px;
             height: 600px;
