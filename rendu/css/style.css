@@ -6,7 +6,6 @@ p{
 }
 a{
     text-decoration: none;
-    
 }
 .cool_link::after {
     content: '';
@@ -112,6 +111,9 @@ header{
     display:grid;
     justify-content: center;
     height: 50px;
+}
+.header_menu_link{
+    color:red; 
 }
 .header_list{
     width:401px;
