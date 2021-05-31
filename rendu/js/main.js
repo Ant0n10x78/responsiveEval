@@ -1,6 +1,6 @@
-var burgerMenu = document.querySelector('.burger__menu');
-var headerMenu = document.querySelector(".header__menu");
-var headerOverlay = document.querySelector('.menu__overlay');
+var burgerMenu = document.querySelector('.burger_menu');
+var headerMenu = document.querySelector(".header_menu");
+var headerOverlay = document.querySelector('.menu_overlay');
 var body = document.querySelector('body');
 
 console.log(burgerMenu, 'burger menu');
@@ -21,7 +21,7 @@ headerOverlay.onclick = function () {
     toggleBurgerMenu(burgerMenu, headerMenu, headerOverlay);
 }
 
-// burgerMenu.addEventListener('click', function () {
-//     console.log('test');
-//     toggleBurgerMenu();
-// })
+burgerMenu.addEventListener('click', function () {
+     console.log('test');
+    toggleBurgerMenu();
+})
